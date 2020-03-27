@@ -1,0 +1,174 @@
+
+body {
+    font-family: arial;
+    margin: 0;
+    padding: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.emscripten { padding-right: 0; margin-left: auto; margin-right: auto; display: block; }
+div.emscripten { text-align: center; }
+div.emscripten_border { border: 1px solid black; }
+/* the canvas *must not* have any border or padding, or mouse coords will be wrong */
+canvas.emscripten { border: 0px none; background-color: black; }
+
+#emscripten_logo {
+    display: inline-block;
+    margin: 0;
+}
+
+.spinner {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+
+    -webkit-animation: rotation .8s linear infinite;
+    -moz-animation: rotation .8s linear infinite;
+    -o-animation: rotation .8s linear infinite;
+    animation: rotation 0.8s linear infinite;
+
+    border-left: 5px solid rgb(235, 235, 235);
+    border-right: 5px solid rgb(235, 235, 235);
+    border-bottom: 5px solid rgb(235, 235, 235);
+    border-top: 5px solid rgb(120, 120, 120);
+
+    border-radius: 100%;
+    background-color: rgb(189, 215, 46);
+}
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes rotation {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+@-o-keyframes rotation {
+    from {-o-transform: rotate(0deg);}
+    to {-o-transform: rotate(360deg);}
+}
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+#status {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: rgb(120, 120, 120);
+}
+
+#progress {
+    height: 20px;
+    width: 300px;
+}
+
+#controls {
+    display: inline-block;
+    float: right;
+    vertical-align: top;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+#output {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: block;
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Console', Monaco, monospace;
+    outline: none;
+}
+
+.overlay {
+    position: absolute;
+    margin-left: -400px;
+    margin-top: 0px;
+    left: 50%;
+    top: 50%;
+    width: 800px;
+    z-index: 2;
+    max-height:100%;
+}
+
+.testtext {
+    position: absolute;
+    margin-left: -50px;
+    margin-top: 480px;
+    left: 52%;
+    top: 50%;
+    width: 100px;
+    z-index: 3;
+    font-size: xx-large;
+}
+
+.lcd {
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    margin-left: -330px;
+    margin-top: 85px;
+}
+
+.str0 {
+    stroke: black;
+    stroke-width: 0.1764;
+    touch-action: none;
+}
+
+.str1 {
+    stroke: black;
+    stroke-width: 0.7056;
+    touch-action: none;
+}
+
+.fil1 {
+    fill: black;
+    touch-action: none;
+}
+
+.fil3 {
+    fill: #E5E5E5;
+    touch-action: none;
+}
+
+.filT {
+    fill: #E5E5A5;
+    touch-action: none;
+}
+
+.fil0 {
+    fill: white;
+    touch-action: none;
+}
+
+.fil2 {
+    fill: lavender;
+    touch-action: none;
+}
+
+.fil4 {
+    fill: black;
+    fill-rule: nonzero;
+    touch-action: none;
+}
