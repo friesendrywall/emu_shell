@@ -3,6 +3,7 @@ var statusElement = document.getElementById('status');
 var progressElement = document.getElementById('progress');
 var spinnerElement = document.getElementById('spinner');
 
+
 var Module = {
   preRun: [],
   postRun: [],
@@ -77,6 +78,7 @@ window.onerror = function(event) {
 
 window.onload = function () {
   createjs.Sound.registerSound("beep.mp3", 'beep');
+  this.setTimeout(function() { document.querySelector('.fil2.str0').width }, 3000)
 };
 
 var pressedList = [];
