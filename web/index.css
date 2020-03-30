@@ -251,6 +251,10 @@ canvas {
         top: 0;
         position: absolute;
     }
+
+    body {
+        touch-action: manipulation;
+    }
     
   }
 
@@ -287,6 +291,10 @@ canvas {
         left: 25%;
         top: 0;
         position: absolute;
+    }
+
+    body {
+        touch-action: manipulation;
     }
     
   }
@@ -326,6 +334,10 @@ canvas {
         top: 0;
         position: absolute;
     }
+
+    body {
+        touch-action: manipulation;
+    }
     
   }
 
@@ -362,6 +374,10 @@ canvas {
         left: 25%;
         top: 0;
         position: absolute;
+    }
+
+    body {
+        touch-action: manipulation;
     }
     
   }
@@ -429,5 +445,10 @@ canvas {
             top: 0;
             position: absolute;
         }
+
+        body {
+            touch-action: manipulation;
+        }
+
       }
   
